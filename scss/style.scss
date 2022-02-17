@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans Narrow" , sans-serif;
+    scroll-behavior: smooth;
+    a{
+        text-decoration: none;
+        text-decoration-color: none;
+    }
+}
+//*********IMPORTACIONES*********
+@import "colores" ;
+@import "header";
+@import "footer";
+@import "secciones";
+//*******MIXINS********
+@mixin tamaño($ancho ,$alto) {
+    width: $ancho;
+    height: $alto;
+}
+
+/*******MAIN******/
+main{
+    .subtitle{
+        color: $cool-red;
+        font-size: 42px;
+        font-weight:900;
+        margin-top: 30px;
+    }
+    div{
+        div{
+            div{
+                .subti{
+                    color: $alt-col;
+                }
+                a{
+                    .imagenes{
+                        @include tamaño(100%,300px);
+                    }
+                    .paquetes{
+                        display: flex;
+                        justify-content: center;
+                        color: $alt-col;
+                        font-size: 25px;
+                        border: solid 2px;
+                        border-color:$cool-red;
+                        padding: 10px;
+                        margin-top: 15px;
+                        min-width: 250px;
+                    }
+                    .paque{
+                        display: flex;
+                        justify-content: center;
+                        color:$alt-col;
+                        font-size: 16px;
+                        background-color: $cool-red;
+                        border: solid 2px;
+                        border-color: $alt-col;
+                        margin-left: 40px;
+                        margin-right: 40px;
+                        padding: 20px;
+                    }
+                }
+                div{
+                    .trans{
+                        color:$alt-col;
+                        font-size: 30px;
+                        margin: 20px 0px 10px 20px;
+                        width: 460px;
+                    }
+                }
+            }
+        }
+    }
+    //FORMULARIO
+    #contacto{
+        padding-left: 25%;
+        padding-right: 25%;
+        margin-bottom: 15px;
+    }
+    .formulario{
+        width: 60%;
+        height: 30px;
+        margin-left: 20%;
+        padding-bottom: 5px;
+        color: $cool-red;
+        font-size: 22px;
+        font-family: 'PT Sans Narrow', sans-serif;
+    }
+    input::placeholder {
+        color: $cool-red;
+        font-size: 1.2em;
+        font-style: italic;
+    }
+    .button{
+        background-color: $cool-red;
+        color: $alt-col;
+        font-size: 26px;
+        @include tamaño(100px,50px);
+        margin-bottom: 10px;
+    }
+    .mar{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    
+}
+
+
+
+
+
+//MEIDA QUERIS
+@import "mediaqueris";
+@import "animaciones";
+@import "map";

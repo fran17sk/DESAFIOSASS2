@@ -1,0 +1,69 @@
+@import "colores";
+/*FONDOS DE PORTADA*/
+
+@each $lista in barilo, cambo, vcp, fotos{
+    .#{$lista}{
+        background-image: url("../img/portada-#{$lista}.jpg");
+        background-size: 100% 500px;
+        background-repeat: no-repeat;
+        height: 500px;
+    }
+    
+}
+
+
+/*MENU*/
+nav{
+    div{
+        a{
+            text-decoration: none;
+            color:$alt-col;
+            &:hover{
+                color:$alt-col;
+            }
+        }
+        .title{
+            font-size: 30px;
+        }
+        div{
+            ul{
+                li{
+                    margin: 0px 20px 0px 20px;
+                    &:hover{
+                        background-color: rgb(99, 95, 95);
+                        transform: scale(1.15,1.15);
+                    }
+                }
+                li{
+                    ul{
+                        &:hover{
+                            background-color: $alt-col;
+                        }
+                        li{
+                            margin: 0;
+                            padding: 0;
+                            &:hover{
+                                background-color: $alt-col;
+                                transform: scale(0.99,0.99);
+                                margin-left:0px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.intro{
+    height: 500px;
+}
+.titulo{
+    color: $cool-red;
+    font-size: 55px;
+    margin-left: 25px;
+}
+.subtitulo{
+    color: $alt-col;
+    font-size: 36px;
+    margin-left: 15px;
+}

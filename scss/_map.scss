@@ -1,0 +1,17 @@
+/*MAP*/
+@import "colores";
+$redes:(
+    facebook:#490fb6,
+    twitter:#00aeff,
+    instagram:#8a027e,
+    youtube:$alt-col,
+);
+@each $clave, $valor in $redes {
+    .btn-#{$clave} {
+        color: #000;
+    }
+    .btn-#{$clave}:hover {
+        color: $valor;
+    }
+    
+}
