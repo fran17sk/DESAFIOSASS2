@@ -129,9 +129,9 @@ footer p {
   height: 400px; }
 
 .imgg {
-  height: 450px;
-  width: 80%;
-  margin-left: 10%; }
+  height: 400px;
+  width: 90%;
+  margin-left: 5%; }
 
 .video {
   height: 500px; }
@@ -208,7 +208,7 @@ main div div div div .trans {
   color: #fffffffd;
   font-size: 30px;
   margin: 20px 0px 10px 20px;
-  width: 460px; }
+  width: 300px; }
 
 main #contacto {
   padding-left: 25%;
@@ -242,6 +242,10 @@ main .mar {
   padding-bottom: 20px; }
 
 /*********MEDIA QUERIS*********/
+@media (min-width: 1001px) {
+  .imgg {
+    height: 650px; } }
+
 @media (max-width: 1000px) {
   li {
     margin: 0px 0px 0px 0px; }
@@ -264,8 +268,8 @@ main .mar {
     background-size: 100% 350px;
     height: 350px; }
   .imgg {
-    height: 400px;
-    margin-left: 7.5%; } }
+    height: 450px;
+    margin-left: 5%; } }
 
 @media (max-width: 500px) {
   li {
@@ -288,8 +292,10 @@ main .mar {
   .subtitle {
     font-size: 25px; }
   .imgg {
-    height: 350px;
-    margin-left: 5%; } }
+    height: 300px;
+    margin-left: 5%; }
+  .fotos {
+    height: 300px; } }
 
 /*ANIMACIONES*/
 .tituloanimado {
