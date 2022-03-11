@@ -101,8 +101,8 @@ footer p {
   justify-content: center;
   margin: 5px; }
 
-body {
-  margin-bottom: 25px; }
+.margin {
+  margin-bottom: 40px; }
 
 .paque {
   display: flex;
